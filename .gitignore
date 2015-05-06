@@ -196,7 +196,7 @@ arch/arm/boot/compressed/piggy.xzkern
 arch/arm/boot/compressed/ashldi3.S
 arch/arm/boot/compressed/piggy.xzkern
 arch/arm/boot/zImage
-arch/arm/configs/apq8084_sec_defconfig
+#arch/arm/configs/apq8084_sec_defconfig
 arch/arm/configs/apq8084_plc_defconfig
 arch/arm/configs/apq8084_plc_trlte_eur_defconfig
 arch/arm/configs/apq8084_placiano_defconfig
@@ -205,7 +205,7 @@ arch/arm/configs/apq8084_nate_defconfig
 arch/arm/configs/apq8084_nate_trlte_eur_defconfig
 arch/arm/configs/apq8084_nate_defconfig
 arch/arm/crypto/bsaes-armv7.pl
-arch/arm/configs/apq8084_sec_userdebug_defconfig
+#arch/arm/configs/apq8084_sec_userdebug_defconfig
 ramdisk.img
 compile.log
 construir_kernel.sh
