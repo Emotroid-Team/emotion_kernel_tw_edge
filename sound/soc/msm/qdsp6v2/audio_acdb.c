@@ -10,6 +10,9 @@
  * GNU General Public License for more details.
  *
  */
+#if defined(CONFIG_MACH_TRLTE_VZW)
+#define DEBUG
+#endif
 #include <linux/slab.h>
 #include <linux/fs.h>
 #include <linux/module.h>
