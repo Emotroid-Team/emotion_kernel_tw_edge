@@ -1446,7 +1446,6 @@ static int __overlay_queue_pipes(struct msm_fb_data_type *mfd)
 				pr_warn("commit without buffer on pipe %d\n",
 					pipe->num);
 				ret = -EINVAL;
-			}
 		}
 
 		/*
