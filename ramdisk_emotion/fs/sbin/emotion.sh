@@ -52,8 +52,12 @@ fi
 
 sync
 
-#SSWAP to 1.4gb
+#FSTRIM
+/res/ext/fstrim.sh
+
+#SSWAP to 1.5gb
 /res/ext/sswap.sh
+
 
 # Execute setenforce to permissive (workaround as it is already permissive that time)
 /system/bin/setenforce 0
