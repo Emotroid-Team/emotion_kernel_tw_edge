@@ -89,14 +89,6 @@ if [ ! -d /data/.emotionkernel ]; then
 	mkdir /data/.emotionkernel
 fi
 
-# Disable knox
-	pm disable com.sec.enterprise.knox.cloudmdm.smdms
-	pm disable com.sec.knox.bridge
-	pm disable com.sec.enterprise.knox.attestation
-	pm disable com.sec.knox.knoxsetupwizardclient
-	pm disable com.samsung.knox.rcp.components	
-	pm disable com.samsung.android.securitylogagent
-
 # Init.d
 if [ ! -d "/system/etc/init.d" ] ; then
 mount -o remount,rw -t auto /system
@@ -124,7 +116,6 @@ echo  Done ! >> /data/emotiontest.log
 #Set default values on boot
 echo "2649600" > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
 echo "1" > /sys/kernel/dyn_fsync/Dyn_fsync_active
-echo "883200" > /sys/kernel/cpufreq_hardlimit/touchboost_lo_freq
 echo "200000000" > /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 echo "600000000" > /sys/class/kgsl/kgsl-3d0/max_gpuclk
 
